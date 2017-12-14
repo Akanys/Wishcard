@@ -1,0 +1,125 @@
+body{
+    background-color: #000;
+    Color: #FFF;
+}
+
+#Ange {
+    -webkit-animation: fadeInDown 3s 1,
+    levitate 3s infinite;
+    -moz-animation: fadeInDown 2s 1,
+    levitate 2s infinite;
+}
+
+#Demon {
+    -webkit-animation: fadeInDown 3s 1,
+    inverselevitate 2s infinite;
+    -moz-animation: fadeInDown 3s 1,
+    inverselevitate 2s infinite;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        -webkit-transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(10px);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInDown {
+    0% {
+        -moz-transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -moz-transform: translateY(10px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes levitate {
+    0% {
+        -webkit-transform: translateY(-15px);
+    }
+
+    50% {
+        -webkit-transform: translateY(0px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-15px);
+    }
+}
+
+@-moz-keyframes levitate {
+    0% {
+        -moz-transform: translateY(-15px);
+    }
+
+    50% {
+        -moz-transform: translateY(0px);
+    }
+
+    100% {
+        -moz-transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes inverselevitate {
+    0% {
+        -webkit-transform: translateY(15px);
+    }
+
+    50% {
+        -webkit-transform: translateY(0px);
+    }
+
+    100% {
+        -webkit-transform: translateY(15px);
+    }
+}
+
+@-moz-keyframes inverselevitate {
+    0% {
+        -moz-transform: translateY(15px);
+    }
+
+    50% {
+        -moz-transform: translateY(0px);
+    }
+
+    100% {
+        -moz-transform: translateY(15px);
+    }
+}
+
+.email, .message{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+margin-top: 20px;
+}
+
+.button{
+    width: 10%;
+    margin: auto;
+}
+
+button{
+    margin-top: 20px;
+}
+
+button, textarea, input{
+    font-size: 25px;
+    width: 100%;
+    padding:5px 20px 5px 20px;
+    border-radius: 35px;
+    text-align: center;
+}
+
+textarea, input{
+    width: 100%;
+}
